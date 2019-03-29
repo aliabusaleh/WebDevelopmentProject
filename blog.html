@@ -58,18 +58,15 @@
     <header id="header">
         <div class="header-top">
             <div class="container">
-                <ul class="nav nav-pills nav-top navbar-right">
+                <ul class="nav nav-pills nav-top navbar-left">
+
                     <li class="dropdown langs">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <img src="images/UK.png" alt="uk"> <i class="fa fa-angle-down"></i></a>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#"><img src="images/uk.png" alt="UK"> <i class="fa fa-angle-down"></i></a>
                         <ul role="menu" class="dropdown-menu">
-                            <li><a href="#"> <img src="images/arabic.png" alt="uk"></a></li>
-
-                            <li><a href="#"><img src="images/dutch.png" alt="uk"></a></li>
-                            <li><a href="#"><img src="images/german.png" alt="uk"></a></li>
+                            <li><a href="#"><img src="images/arabic.png" alt="Arabic"></a></li>
+                            <li><a href="#"><img src="images/dutch.png" alt="dutch"></a></li>
+                            <li><a href="#"><img src="images/german.png" alt="german"></a></li>
                         </ul>
-
-
                     </li>
                     <li class="dropdown currency">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-usd"></i> <i class="fa fa-angle-down"></i></a>
@@ -79,18 +76,20 @@
                         </ul>
                     </li>
                     <li class="dropdown my-account">
-                        <a  class="dropdown-toggle" href="#">My Cart<i></i></a>
-
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">My Account <i class="fa fa-angle-down"></i></a>
+                        <ul role="menu" class="dropdown-menu">
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">Account</a></li>
+                            <li><a href="#">Orders</a></li>
+                        </ul>
                     </li>
-
-
                     <li class="dropdown my-cart">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-shopping-cart"></i></a>
                         <ul role="menu" class="dropdown-menu header-cart_product_list">
                             <li class="added-items">
                                 <div class="header-cart_product_list_item clearfix">
-                                    <a class="item-preview" href="product-details.html"><img src="images/stylemenn.jpg" alt="Product"></a>
-                                    <h4><a class="font-additional font-weight-normal hover-focus-color cart-product-title" href="product-details.html">Men HandMade</a></h4>
+                                    <a class="item-preview" href="product-details.html"><img src="images/cart-img-1.jpg" alt="Product"></a>
+                                    <h4><a class="font-additional font-weight-normal hover-focus-color cart-product-title" href="product-details.html">Stylish Wear</a></h4>
                                     <span class="item-cat font-main font-weight-normal"><a class="hover-focus-color cart-product-category" href="#">Men</a></span>
                                     <span class="item-price font-additional font-weight-normal customColor">37.15 USD</span>
                                     <a class="item-del hover-focus-color" href="#"><i class="fa fa-trash-o"></i></a>
@@ -98,15 +97,27 @@
                             </li>
                             <li class="added-items">
                                 <div class="header-cart_product_list_item clearfix">
-                                    <a class="item-preview" href="product-details.html"><img src="images/smallbag.jpg" alt="Product"></a>
+                                    <a class="item-preview" href="product-details.html"><img src="images/cart-img-2.jpg" alt="Product"></a>
                                     <h4><a class="font-additional font-weight-normal hover-focus-color cart-product-title" href="product-details.html">Bag</a></h4>
-                                    <span class="item-cat font-main font-weight-normal"><a class="hover-focus-color cart-product-category" href="#">Women HandMade</a></span>
-                                    <span class="item-price font-additional font-weight-normal customColor">60.10 $</span>
+                                    <span class="item-cat font-main font-weight-normal"><a class="hover-focus-color cart-product-category" href="#">Accessories</a></span>
+                                    <span class="item-price font-additional font-weight-normal customColor">60.10 USD</span>
                                     <a class="item-del hover-focus-color" href="#"><i class="fa fa-trash-o"></i></a>
                                 </div>
                             </li>
+                        </ul>
                     </li>
-                </ul>
+
+                </ul><ul class="nav nav-pills nav-top navbar-right">
+                <li class="logo">
+
+                    <div class="container relative">
+                        <a href="index.html" class="logo pull-left"></a>
+
+                    </div>
+
+                </li>
+
+            </ul>
             </div>
             <div class="container-fluid trigger-container">
                 <div class="row text-center">
@@ -114,12 +125,7 @@
                 </div>
             </div>
         </div>
-        <div class="header-middle">
-            <div class="container relative">
-                <a href="index.html" class="logo pull-left"></a>
 
-            </div>
-        </div>
     </header>
 
     <!-- icon-menu -->

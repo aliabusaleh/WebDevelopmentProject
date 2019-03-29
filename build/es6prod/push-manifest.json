@@ -1,0 +1,100 @@
+{
+  "index.html": {
+    "css/master.css": {
+      "type": "style",
+      "weight": 1
+    },
+    "css/header.css": {
+      "type": "style",
+      "weight": 1
+    },
+    "css/icon-menu.css": {
+      "type": "style",
+      "weight": 1
+    },
+    "plugins/switcher/css/switcher.css": {
+      "type": "style",
+      "weight": 1
+    },
+    "plugins/switcher/css/color1.css": {
+      "type": "style",
+      "weight": 1
+    },
+    "plugins/switcher/css/color2.css": {
+      "type": "style",
+      "weight": 1
+    },
+    "plugins/switcher/css/color3.css": {
+      "type": "style",
+      "weight": 1
+    },
+    "plugins/switcher/css/color4.css": {
+      "type": "style",
+      "weight": 1
+    },
+    "plugins/switcher/css/color5.css": {
+      "type": "style",
+      "weight": 1
+    },
+    "js/jquery-1.11.2.min.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "js/jquery-ui.min.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "js/bootstrap.min.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "js/modernizr.custom.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "js/jquery.placeholder.min.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "js/smoothscroll.min.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "plugins/owl-carousel/owl.carousel.min.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "plugins/bxslider/jquery.bxslider.min.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "plugins/switcher/js/bootstrap-select.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "plugins/switcher/js/evol.colorpicker.min.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "plugins/switcher/js/dmss.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "plugins/isotope/jquery.isotope.min.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "js/wow.min.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "js/cssua.min.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "js/theme.js": {
+      "type": "script",
+      "weight": 1
+    }
+  }
+}

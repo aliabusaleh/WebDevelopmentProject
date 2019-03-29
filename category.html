@@ -54,11 +54,19 @@
         </div>
       </div>
       <!-- End Switcher -->
-            <header id="header">
+            <header id="header" >
                 <div class="header-top">
-                    <div class="container">
-                        <ul class="nav nav-pills nav-top navbar-right">
+                    <div class="container" >
+                        <ul class="nav nav-pills nav-top navbar-left" >
+                            <li class="logo">
+                             <div class="container relative">
+                                <a href="index.html" class="logo "></a>
+                                <div class="header-search pull-right"></div></div>
+
+                            </li>
+
                             <li class="dropdown langs">
+
                                 <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                                     <img src="images/UK.png" alt="uk"> <i class="fa fa-angle-down"></i></a>
                                 <ul role="menu" class="dropdown-menu">
@@ -108,6 +116,39 @@
                   </ul>
               </li>
             </ul>
+                        <ul class="nav nav-pills nav-top navbar-right" style="margin-top: 4px">
+                            <nav>
+                            <li>
+                                <div class="header-search pull-right">
+                                    <div class="header-search_filter">
+                                        <select class="formDropdown font-additional font-weight-normal" name="filterby" id="filterby">
+                                            <option value="0">Filter By</option>
+                                            <option value="date">Date</option>
+                                            <option value="title">Title</option>
+                                        </select>
+                                        <i class="fa fa-angle-down customColor"></i>
+                                    </div>
+
+
+
+
+
+
+                                    <div class="header-search_form">
+                                        <form class="product-search form-inline" action="#" method="POST">
+                                            <div class="form-group">
+                                                <label class="sr-only" for="searchQuery">What are you looking for today.. ?</label>
+                                                <input type="search" class="product-search_field font-main font-weight-normal" id="searchQuery" placeholder="What are you looking for today.. ?">
+                                            </div>
+                                            <button type="submit" class="product-search_btn hvr-bounce-to-right">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                            </nav>
+                        </ul>
           </div>
 
 
@@ -119,43 +160,8 @@
             </div>
           </div>         
         </div>
-        <div class="header-middle">
-          <div class="container relative">
-            <a href="index.html" class="logo pull-left"></a>
-            <div class="header-search pull-right">
-              <div class="header-search_filter">
-                <select class="formDropdown font-additional font-weight-normal" name="filterby" id="filterby">
-                  <option value="0">Filter By</option>
-                  <option value="date">Date</option>
-                  <option value="title">Title</option>
-                </select>
-                <i class="fa fa-angle-down customColor"></i>
-              </div>
 
-
-
-
-
-
-              <div class="header-search_form">
-                <form class="product-search form-inline" action="#" method="POST">
-                  <div class="form-group">
-                    <label class="sr-only" for="searchQuery">What are you looking for today.. ?</label>
-                    <input type="search" class="product-search_field font-main font-weight-normal" id="searchQuery" placeholder="What are you looking for today.. ?">
-                  </div>
-                  <button type="submit" class="product-search_btn hvr-bounce-to-right">
-                    <i class="fa fa-search"></i>
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
       </header>
-
-
-
-
 
       <!-- icon-menu -->
       <nav id="icon-menu" class="main-menu">
@@ -227,16 +233,16 @@
 
           <!-- icon-menu -->
 
-			<section id="pageTitleBox" class="paralax breadcrumb-container"  style="background-image: url('images/perfect.jpg');">
-				<div class="overlay"></div>
+			<section id="pageTitleBox" class="paralax breadcrumb-container "   style="background-image: url('images/perfect.jpg'); height: 300px;margin-top: 0px;">
+
 				<div class="container relative">
-					<h1 class="title font-additional font-weight-normal color-main text-uppercase wow zoomIn" data-wow-delay="0.3s"> Our Shopping </h1>
+					<h1 class="title font-additional font-weight-normal color-main text-uppercase wow zoomIn customColor" data-wow-delay="0.3s"> Our Shopping </h1>
 					<ul class="breadcrumb-list">
 						<li>
 							<a href="index-1.html" class="font-additional font-weight-normal color-main text-uppercase">HOME</a>
 							<span><i class="fa fa-angle-double-right"></i> </span>
 						</li>
-						<li class="font-additional font-weight-normal color-main text-uppercase">About</li>
+						<li class="font-additional font-weight-normal color-main text-uppercase">Category</li>
 					</ul>
 				</div>
 			</section>

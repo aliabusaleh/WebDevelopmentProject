@@ -1,0 +1,21 @@
+{
+  "name": "Handmade Center",
+  "short_name": "HMC",
+  "start_url": "/",
+  "display": "standalone",
+  "icons":[
+    {
+      "src":"/images/green-logo.png",
+      "type":"image/png",
+      "sizes":"192x192"
+
+    },
+    {
+      "src":"/images/green-logo.png",
+      "type":"image/png",
+      "sizes":"512x512"
+    }
+
+  ],
+  "background_color":"#4285f4"
+}

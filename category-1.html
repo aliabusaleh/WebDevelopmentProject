@@ -55,119 +55,115 @@
       </div>
       <!-- End Switcher -->
 
+          <header id="header" >
+            <div class="header-top">
+              <div class="container" >
+                <ul class="nav nav-pills nav-top navbar-left" >
+                  <li class="logo">
+                    <div class="container relative">
+                      <a href="index.html" class="logo "></a>
+                      <div class="header-search pull-right"></div></div>
 
+                  </li>
 
-			<<header id="header">
-          <div class="header-top">
-            <div class="container">
-              <ul class="nav nav-pills nav-top navbar-right">
-                <li class="dropdown langs">
-                  <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                    <img src="images/UK.png" alt="uk"> <i class="fa fa-angle-down"></i></a>
-                  <ul role="menu" class="dropdown-menu">
-                    <li><a href="#"> <img src="images/arabic.png" alt="uk"></a></li>
+                  <li class="dropdown langs">
 
-                    <li><a href="#"><img src="images/dutch.png" alt="uk"></a></li>
-                    <li><a href="#"><img src="images/german.png" alt="uk"></a></li>
-                  </ul>
-                </li>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                      <img src="images/UK.png" alt="uk"> <i class="fa fa-angle-down"></i></a>
+                    <ul role="menu" class="dropdown-menu">
+                      <li><a href="#"> <img src="images/arabic.png" alt="uk"></a></li>
 
-
-
-                <li class="dropdown currency">
-                  <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-usd"></i> <i class="fa fa-angle-down"></i></a>
-                  <ul role="menu" class="dropdown-menu">
-                    <li><a href="#"><i class="fa fa-eur"></i></a></li>
-                    <li><a href="#"><i class="fa fa-jpy"></i></a></li>
-                  </ul>
-                </li>
-                <li class="dropdown my-account">
-                  <a  href="#">MY Cart</a>
-
-                </li>
+                      <li><a href="#"><img src="images/dutch.png" alt="uk"></a></li>
+                      <li><a href="#"><img src="images/german.png" alt="uk"></a></li>
+                    </ul>
+                  </li>
 
 
 
+                  <li class="dropdown currency">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-usd"></i> <i class="fa fa-angle-down"></i></a>
+                    <ul role="menu" class="dropdown-menu">
+                      <li><a href="#"><i class="fa fa-eur"></i></a></li>
+                      <li><a href="#"><i class="fa fa-jpy"></i></a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown my-account">
+                    <a  href="#">MY Cart</a>
+
+                  </li>
+
+
+                  <li class="dropdown my-cart">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-shopping-cart"></i></a>
+                    <ul role="menu" class="dropdown-menu header-cart_product_list">
+                      <li class="added-items">
+                        <div class="header-cart_product_list_item clearfix">
+                          <a class="item-preview" href="product-details.html"><img src="images/stylemenn.jpg" alt="Product"></a>
+                          <h4><a class="font-additional font-weight-normal hover-focus-color cart-product-title" href="product-details.html">Men HandMade</a></h4>
+                          <span class="item-cat font-main font-weight-normal"><a class="hover-focus-color cart-product-category" href="#">Men</a></span>
+                          <span class="item-price font-additional font-weight-normal customColor">37.15 USD</span>
+                          <a class="item-del hover-focus-color" href="#"><i class="fa fa-trash-o"></i></a>
+                        </div>
+                      </li>
+                      <li class="added-items">
+                        <div class="header-cart_product_list_item clearfix">
+                          <a class="item-preview" href="product-details.html"><img src="images/smallbag.jpg" alt="Product"></a>
+                          <h4><a class="font-additional font-weight-normal hover-focus-color cart-product-title" href="product-details.html">Bag</a></h4>
+                          <span class="item-cat font-main font-weight-normal"><a class="hover-focus-color cart-product-category" href="#">Women HandMade</a></span>
+                          <span class="item-price font-additional font-weight-normal customColor">60.10 $</span>
+                          <a class="item-del hover-focus-color" href="#"><i class="fa fa-trash-o"></i></a>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="nav nav-pills nav-top navbar-right" style="margin-top: 4px">
+                  <nav>
+                    <li>
+                      <div class="header-search pull-right">
+                        <div class="header-search_filter">
+                          <select class="formDropdown font-additional font-weight-normal" name="filterby" id="filterby">
+                            <option value="0">Filter By</option>
+                            <option value="date">Date</option>
+                            <option value="title">Title</option>
+                          </select>
+                          <i class="fa fa-angle-down customColor"></i>
+                        </div>
 
 
 
 
-                <li class="dropdown my-cart">
-            <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="fa fa-shopping-cart"></i></a>
-            <ul role="menu" class="dropdown-menu header-cart_product_list">
-              <li class="added-items">
-                <div class="header-cart_product_list_item clearfix">
-                  <a class="item-preview" href="product-details.html"><img src="images/stylemenn.jpg" alt="Product"></a>
-                  <h4><a class="font-additional font-weight-normal hover-focus-color cart-product-title" href="product-details.html">Men HandMade</a></h4>
-                  <span class="item-cat font-main font-weight-normal"><a class="hover-focus-color cart-product-category" href="#">Men</a></span>
-                  <span class="item-price font-additional font-weight-normal customColor">37.15 USD</span>
-                  <a class="item-del hover-focus-color" href="#"><i class="fa fa-trash-o"></i></a>
+
+
+                        <div class="header-search_form">
+                          <form class="product-search form-inline" action="#" method="POST">
+                            <div class="form-group">
+                              <label class="sr-only" for="searchQuery">What are you looking for today.. ?</label>
+                              <input type="search" class="product-search_field font-main font-weight-normal" id="searchQuery" placeholder="What are you looking for today.. ?">
+                            </div>
+                            <button type="submit" class="product-search_btn hvr-bounce-to-right">
+                              <i class="fa fa-search"></i>
+                            </button>
+                          </form>
+                        </div>
+                      </div>
+                    </li>
+                  </nav>
+                </ul>
+              </div>
+
+
+
+
+              <div class="container-fluid trigger-container">
+                <div class="row text-center">
+                  <button class="menu-trigger"><i class="fa fa-bars"></i></button>
                 </div>
-              </li>
-              <li class="added-items">
-                <div class="header-cart_product_list_item clearfix">
-                  <a class="item-preview" href="product-details.html"><img src="images/smallbag.jpg" alt="Product"></a>
-                  <h4><a class="font-additional font-weight-normal hover-focus-color cart-product-title" href="product-details.html">Bag</a></h4>
-                  <span class="item-cat font-main font-weight-normal"><a class="hover-focus-color cart-product-category" href="#">Women HandMade</a></span>
-                  <span class="item-price font-additional font-weight-normal customColor">60.10 $</span>
-                  <a class="item-del hover-focus-color" href="#"><i class="fa fa-trash-o"></i></a>
-                </div>
-              </li>
-            </ul>
-          </li>
-            </ul>
-          </div>
-
-
-
-
-
-            <div class="container-fluid trigger-container">
-              <div class="row text-center">
-                <button class="menu-trigger"><i class="fa fa-bars"></i></button>
               </div>
             </div>
-          </div>
-          <div class="header-middle">
-            <div class="container relative">
-              <a href="index.html" class="logo pull-left"></a>
-              <div class="header-search pull-right">
-                <div class="header-search_filter">
-                  <select class="formDropdown font-additional font-weight-normal" name="filterby" id="filterby">
-                    <option value="0">Filter By</option>
-                    <option value="date">Date</option>
-                    <option value="title">Title</option>
-                  </select>
-                  <i class="fa fa-angle-down customColor"></i>
-                </div>
 
-
-
-
-
-
-
-                <div class="header-search_form">
-                  <form class="product-search form-inline" action="#" method="POST">
-                    <div class="form-group">
-                      <label class="sr-only" for="searchQuery">What are you looking for today.. ?</label>
-                      <input type="search" class="product-search_field font-main font-weight-normal" id="searchQuery" placeholder="What are you looking for today.. ?">
-                    </div>
-                    <button type="submit" class="product-search_btn hvr-bounce-to-right">
-                      <i class="fa fa-search"></i>
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </header>
-
-
-
-
-
-      <!-- icon-menu -->
+          </header>
+          <!-- icon-menu -->
           <nav id="icon-menu" class="main-menu">
 
             <div class="scrollbar" id="style-1">

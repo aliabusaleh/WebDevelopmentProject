@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "NNU": "mywebproject-nnu",
+    "default": "mywebproject-nnu"
+  }
+}

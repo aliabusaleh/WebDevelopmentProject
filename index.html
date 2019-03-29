@@ -3,8 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>iCart | HandMadeWork</title>
-		
+		<title>Handmade Center</title>
+
+		<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+		<script>
+			// Initialize Firebase
+			var config = {
+				apiKey: "AIzaSyCKE36oTp-9RtoHikpzfDgs4j-5qg7AuH0",
+				authDomain: "mywebproject-nnu.firebaseapp.com",
+				databaseURL: "https://mywebproject-nnu.firebaseio.com",
+				projectId: "mywebproject-nnu",
+				storageBucket: "mywebproject-nnu.appspot.com",
+				messagingSenderId: "590702512366"
+			};
+			firebase.initializeApp(config);
+		</script>
+
 		<link href="css/master.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
     <link href="css/icon-menu.css" rel="stylesheet">
@@ -58,11 +72,12 @@
 			<header id="header">
 				<div class="header-top">
 					<div class="container">
-  					<ul class="nav nav-pills nav-top navbar-right">
+  					<ul class="nav nav-pills nav-top navbar-left">
+
   						<li class="dropdown langs">
-  							<a data-toggle="dropdown" class="dropdown-toggle" href="#"><img src="images/arabic.png" alt="arabic"> <i class="fa fa-angle-down"></i></a>
+  							<a data-toggle="dropdown" class="dropdown-toggle" href="#"><img src="images/uk.png" alt="UK"> <i class="fa fa-angle-down"></i></a>
   							<ul role="menu" class="dropdown-menu">
-  								<li><a href="#"><img src="images/uk.png" alt="uk"></a></li>
+  								<li><a href="#"><img src="images/arabic.png" alt="Arabic"></a></li>
   								<li><a href="#"><img src="images/dutch.png" alt="dutch"></a></li>
   								<li><a href="#"><img src="images/german.png" alt="german"></a></li>
   							</ul>
@@ -105,7 +120,15 @@
                     </li>
                   </ul>
               </li>
-  					</ul>            
+						<li class="logo">
+
+							<div class="container relative">
+								<a href="index.html" class="logo pull-right" style="align-items : center;"></a>
+
+							</div>
+
+						</li>
+  					</ul>
 					</div> 
           <div class="container-fluid trigger-container">
             <div class="row text-center">
@@ -113,154 +136,127 @@
             </div>
           </div>         
 				</div>
-				<div class="header-middle">
-					<div class="container relative">
-						<a href="index.html" class="logo pull-left"></a>
-						<div class="header-search pull-right">
-							<div class="header-search_filter">
-								<select class="formDropdown font-additional font-weight-normal" name="filterby" id="filterby">
-									<option value="0">Filter By</option>
-									<option value="date">Date</option>
-									<option value="title">Title</option>
-									<option value="cat">Category</option>
-								</select>
-								<i class="fa fa-angle-down customColor"></i>
-							</div>
-							<div class="header-search_form">
-								<form class="product-search form-inline" action="#" method="POST">
-									<div class="form-group">
-										<label class="sr-only" for="searchQuery">Product Name ...</label>
-										<input type="search" class="product-search_field font-main font-weight-normal" id="searchQuery" placeholder="Product Name ...">
-									</div>
-									<button type="submit" class="product-search_btn hvr-bounce-to-right">
-										<i class="fa fa-search"></i>
-									</button>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
+
 			</header>
 
-      <!-- icon-menu -->
-      <nav id="icon-menu" class="main-menu">
-        
-        <div class="scrollbar" id="style-1">
-          <ul>
-            <li class="lightli">                                   
-              <a href="index.html">
-                <i class="fa fa-home fa-lg"></i>
-                <span class="nav-text">Home</span>
-              </a>
-            </li>
-            <li class="lightli">                                 
-              <a href="#">
-                <i class="fa fa-user fa-lg"></i>
-                <span class="nav-text">My Account</span>
-              </a>
-            </li>
-            <li class="lightli">                                 
-              <a href="contact.html">
-                <i class="fa fa-envelope-o fa-lg"></i>
-                <span class="nav-text">Contact</span>
-              </a>
-            </li>
-            
-              <li class="darkerli">
-                <a href="category.html">
-                  <i class="fa fa-shopping-cart"></i>
-                   <span class="nav-text">Shop</span>
-                </a>
-              </li>
-              <li class="darkerli">
-                <a href="category.html">
-                  <i class="fa fa-male fa-lg"></i>
-                  <span class="nav-text">Men</span>
-                </a>
-              </li>
-              <li class="darkerli">
-                <a href="category-1.html">
-                  <i class="fa fa-female fa-lg"></i>
-                  <span class="nav-text">Women</span>
-                </a>
-              </li>
-              <li class="darkerli">
-                <a href="category.html">
-                  <i class="fa fa-picture-o fa-user-secret"></i>
-                  <span class="nav-text">shoes</span>
-                </a>
-              </li>
-              <li class="darkerli">
-                <a href="product-details.html">
-                  <i class="fa fa-picture-o fa-newspaper-o"></i>
-                  <span class="nav-text">Detail</span>
-                </a>
-              </li>
-              <li class="darkerli">
-                <a href="product-details-1.html">
-                  <i class="fa fa-picture-o fa-building"></i>
-                  <span class="nav-text">Detail-1</span>
-                </a>
-              </li>
-              <li class="darkerli">
-                <a href="blog.html">
-                  <i class="fa fa-pencil-square-o fa-lg"></i>
-                  <span class="nav-text">Blog</span>
-                </a>
-              </li>
-                                 
-          </ul>
-        </div>
+			<!-- icon-menu -->
+			<nav id="icon-menu" class="main-menu">
 
-      </nav>
-          <!-- icon-menu -->
+				<div class="scrollbar" id="style-1">
+					<ul>
+						<li class="lightli">
+							<a href="index.html">
+								<i class="fa fa-home fa-lg"></i>
+								<span class="nav-text">Home</span>
+							</a>
+						</li>
+						<li class="lightli">
+							<a href="#">
+								<i class="fa fa-user fa-lg"></i>
+								<span class="nav-text">My Account</span>
+							</a>
+						</li>
+						<li class="lightli">
+							<a href="contact.html">
+								<i class="fa fa-envelope-o fa-lg"></i>
+								<span class="nav-text">Contact</span>
+							</a>
+						</li>
+
+						<li class="darkerli">
+							<a href="category.html">
+								<i class="fa fa-shopping-cart"></i>
+								<span class="nav-text">Shop</span>
+							</a>
+						</li>
+						<li class="darkerli">
+							<a href="category.html">
+								<i class="fa fa-male fa-lg"></i>
+								<span class="nav-text">Men</span>
+							</a>
+						</li>
+						<li class="darkerli">
+							<a href="category-1.html">
+								<i class="fa fa-female fa-lg"></i>
+								<span class="nav-text">Women</span>
+							</a>
+						</li>
+						<li class="darkerli">
+							<a href="category.html">
+								<i class="fa fa-picture-o fa-user-secret"></i>
+								<span class="nav-text">Accesories</span>
+							</a>
+						</li>
+						<li class="darkerli">
+
+						</li>
+						<li class="darkerli">
+
+						</li>
+						<li class="darkerli">
+							<a href="blog.html">
+								<i class="fa fa-pencil-square-o fa-lg"></i>
+								<span class="nav-text">Our Worker</span>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+
+			</nav>
+
+
+
+
+
+
+			<!-- icon-menu -->
 
 			<section id="main-slider">
 				<div id="owl-main-slider" class="enable-owl-carousel owl-main-slider owl-carousel owl-theme" data-navigation="true" data-pagination="false" data-single-item="true" data-auto-play="7000" data-transition-style="fadeUp" data-main-text-animation="true" data-after-init-delay="4000" data-after-move-delay="500" data-stop-on-hover="true">
 					<div class="item slide1">
-						<img src="images/main-slider/slide-1.jpg" alt="Slide 1">
+						<img src="images/main-slider/selling.jpg" width="1500px" height="400px" alt="Slide 1">
 						<div class="main-slider_content">
-							<div class="main-slider_smalltitle main-slider_zoomIn animated" style="visibility: hidden;"><span class="customColor">get upto 30% offer for order over $400!</span></div>
-							<h3 class="main-slider_title font-additional font-weight-bold main-slider_fadeInLeft animated" style="visibility: hidden;">BIGGEST FASHION 2015<br>  COLLECTION</h3>
+							<div class="main-slider_smalltitle main-slider_zoomIn animated" style="visibility: hidden;"><span class="customColor">get upto 30% offer for order over $200!</span></div>
+							<h3 class="main-slider_title font-additional font-weight-bold main-slider_fadeInLeft animated" style="visibility: hidden;">BIGGEST HANDMADE 2019<br>  COLLECTION</h3>
 							<div class="main-slider_row">
 								<div class="line-separator main-slider_zoomIn animated" style="visibility: hidden;">
 									<img src="images/seperator.png" alt="seperator">
 								</div>
 							</div>
 							<div class="main-slider_buttons">
-								<a href="#" class="btn button-border font-additional font-weight-bold hvr-bounce-to-right main-slider_fadeInLeftBig animated before-bg" style="visibility: hidden;">SHOP NOW</a>
-								<a href="#" class="btn button-border font-additional font-weight-bold hvr-bounce-to-right main-slider_fadeInRightBig animated before-bg" style="visibility: hidden;">PURCHASE</a>
+								<a href="#" class="btn button-border font-additional font-weight-bold hvr-bounce-to-right main-slider_fadeInLeftBig animated before-bg customBorderColor customColor" style="visibility: hidden; ">SHOP NOW</a>
+								<a href="#" class="btn button-border font-additional font-weight-bold hvr-bounce-to-right main-slider_fadeInRightBig animated before-bg customBorderColor customColor" style="visibility: hidden;">PURCHASE</a>
 							</div>
 						</div>
 					</div>
 					<div class="item slide2">
-						<img src="images/main-slider/slide-2.jpg" alt="Slide 2">
+						<img src="images/main-slider/slide-11.jpg" width="1500px" height="400px" alt="Slide 2">
 						<div class="main-slider_content">
 							<div class="main-slider_row">
 								<div class="line-separator main-slider_zoomIn animated" style="visibility: hidden;">
 									<img src="images/seperator.png" alt="seperator">
 								</div>
 							</div>
-							<div class="main-slider_smalltitle color-main main-slider_fadeInRight animated" style="visibility: hidden;">HOT COLLECTION</div>
-							<h3 class="main-slider_title font-additional font-weight-bold text-shadow color-main main-slider_fadeInLeft animated" style="visibility: hidden;">AUTUMN WINTER 2015/2016</h3>
-							<div class="main-slider_buttons">
-								<a href="#" class="btn button-border font-additional font-weight-bold hvr-bounce-to-right main-slider_slideInUp animated before-bg" style="visibility: hidden;">SHOP NOW</a>
+							<div class="main-slider_smalltitle color-main main-slider_fadeInRight animated " style="visibility: hidden;color: darkslategray">Best Quality</div>
+							<span class="customColor">Handmade 2019/2020 products, best gifts ever </span><div class="main-slider_buttons">
+								<a href="#" class="btn button-border font-additional font-weight-bold hvr-bounce-to-right main-slider_slideInUp animated before-bg customBorderColor customColor" style="visibility: hidden;">SHOP NOW</a>
 							</div>
 						</div>
 					</div>
 					<div class="item slide3">
-						<img src="images/main-slider/slide-3.jpg" alt="Slide 3">
+						<img src="images/main-slider/slide-3.jpg" width="1500px" height="400px" alt="Slide 3">
 						<div class="main-slider_content">
 							
-							<h3 class="main-slider_title font-additional font-weight-normal text-shadow main-slider_fadeInLeft animated" style="visibility: hidden; padding-bottom:5px;">style &amp; comfort</h3>
+							<h3 class="main-slider_title font-additional font-weight-normal text-shadow main-slider_fadeInLeft animated" style="visibility: hidden; padding-bottom:5px; color: darkslategray">Made with Love</h3>
 							<div class="main-slider_row">
 								<div class="line-separator main-slider_zoomIn animated" style="visibility: hidden;">
 									<img src="images/white-seperator.png" alt="seperator">
 								</div>
 							</div>
-							<span class="main-slider_desc font-main main-slider_fadeInRight animated" style="visibility: hidden;">Proin est Pellentesque risus magna vulputate vitae sodales aliquam morb non sem lacus porta molis. Nunc condimentum metus</span>
+							<span class="customColor">Everything here is made with Love for you, we choice our product carefully to handled your basics </span>
 							<div class="main-slider_buttons">
-								<a href="#" class="btn button-border font-additional font-weight-bold hvr-bounce-to-right main-slider_slideInUp animated before-bg" style="visibility: hidden;">SHOP NOW</a>
+								<a href="#" class="btn button-border font-additional font-weight-bold hvr-bounce-to-top main-slider_slideInUp animated before-bg customBorderColor customColor" style="visibility: hidden;">SHOP NOW</a>
 							</div>
 						</div>
 					</div>
@@ -272,40 +268,43 @@
 					<ul class="category-images">
 						<li class="grid">
 							<figure class="effect-ruby wow fadeIn" data-wow-delay="0.3s" data-wow-duration="2s">
-								<img src="images/products/1.jpg" alt="product">
+								<img src="images/Men_main.jpg" width="40px" height="280px" alt="product">
 								<figcaption>
 									<div class="category-images_content">
-										<p class="bottom-text font-additional font-weight-bold text-uppercase color-main customBgColor">FOR WOMEN</p>
-                    <h2 class="font-additional font-weight-bold text-uppercase color-main customBgColor">SUMMER COLLECTION</h2>
+										<p class="bottom-text font-additional font-weight-bold text-uppercase color-main customBgColor">You are the Best</p>
+                    <h2 class="font-additional font-weight-bold text-uppercase color-main customBgColor">For Men</h2>
 									</div>
 									<a href="#">View more</a>
 								</figcaption>			
 							</figure>
 						</li>
+
 						<li class="grid left-space right-space">
 							<figure class="effect-ruby wow fadeIn" data-wow-delay="0.6s" data-wow-duration="2s">
-								<img src="images/products/2.jpg" alt="Category">
+								<img src="images/acc_main.jpg" width="40px" height="280px"  alt="Category">
 								<figcaption>
 									<div class="category-images_content">
-										<p class="bottom-text font-additional font-weight-bold text-uppercase color-main customBgColor">TRENDY SHIRTS</p>
-                    <h2 class="font-additional font-weight-bold text-uppercase color-main customBgColor">NEW ARRIVALS</h2>										
+										<p class="bottom-text font-additional font-weight-bold text-uppercase color-main customBgColor">we care about both of you</p>
+										<h2 class="font-additional font-weight-bold text-uppercase color-main customBgColor">Accessories</h2>
 									</div>
 									<a href="#">View more</a>
-								</figcaption>			
+								</figcaption>
 							</figure>
 						</li>
-						<li class="grid">
+
+						<li class="grid ">
 							<figure class="effect-ruby wow fadeIn" data-wow-delay="0.6s" data-wow-duration="2s">
-								<img src="images/products/3.jpg" alt="Category">
+								<img src="images/Women_main.jpg"  width="40px" height="280px" alt="Category">
 								<figcaption>
 									<div class="category-images_content">
-										<p class="bottom-text font-additional font-weight-bold text-uppercase color-main customBgColor">FOR MEN</p>
-                    <h2 class="font-additional font-weight-bold text-uppercase color-main customBgColor">2015/16 TRENDS</h2>										
+										<p class="bottom-text font-additional font-weight-bold text-uppercase color-main customBgColor">Your are the Kindness</p>
+                    <h2 class="font-additional font-weight-bold text-uppercase color-main customBgColor">For Women</h2>
 									</div>
 									<a href="#">View more</a>
 								</figcaption>			
 							</figure>
 						</li>
+
 					</ul>
 				</div>
 			</section>
@@ -314,8 +313,8 @@
 				<div class="container relative">
 					
 					<div class="isotopeBox">
-						<h2 class="title font-additional font-weight-bold text-uppercase wow fadeInUp" data-wow-duration="2s">BEST SELLERS</h2>
-						<span class="subTitle font-additional font-weight-normal text-uppercase wow fadeIn" data-wow-duration="2s">NEW ARRIVAL / TRENDY COLLECTION</span>
+						<h2 class="title font-additional font-weight-bold text-uppercase wow fadeInUp" data-wow-duration="2s">BEST Products</h2>
+						<span class="subTitle font-additional font-weight-normal text-uppercase wow fadeIn" data-wow-duration="2s">BEST SELLER / TRENDY COLLECTION</span>
 						<div class="line-seperatorBox clearfix">
 							<div class="line-seperator">
 								<img src="images/seperator.png" alt="seperator">
@@ -363,7 +362,7 @@
 									<div class="isotope-item  newproducts popular">
 										<div class="product-item hvr-underline-from-center">
 											<div class="product-item_body">
-												<img class="product-item_image" src="images/products/5.jpg" alt="Product">
+												<img class="product-item_image" src="images/products/dania1.jpg" alt="Product" width="1000px" height="700">
 												<a class="product-item_link" href="product-details.html">
 													<span class="product-item_new color-main font-additional text-uppercase circle">new</span>
 												</a>
@@ -390,7 +389,7 @@
 									<div class="isotope-item  newproducts discount">
 										<div class="product-item hvr-underline-from-center">
 											<div class="product-item_body">
-												<img class="product-item_image" src="images/products/6.jpg" alt="Product">
+												<img class="product-item_image" src="images/products/dania1.jpg" alt="Product" width="800" height="1000">
 												<a class="product-item_link" href="product-details.html"></a>
 												<div class="product-sidebar">
                           <a href="#" class="buy">
@@ -665,12 +664,12 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 clearfix">
-							<img class="discount-image wow fadeIn" data-wow-delay="0.3s" data-wow-duration="2s" src="images/bags.png" alt="Discounts">
+							<img class="discount-image wow fadeIn" data-wow-delay="0.3s" data-wow-duration="2s" src="images/drawing-33437_1280.png" width="420px" height="380px" alt="Discounts">
 						</div>
 						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 clearfix text-center">
 							<div class="discount-info">
-								<span class="discount-info_small_txt customColor text-uppercase wow fadeInUp text-center" data-wow-delay="0.6s" data-wow-duration="2s">get upto 20% offer for order over $499!</span>
-								<span class="discount-info_shadow_txt font-additional font-weight-bold text-uppercase wow fadeIn text-center" data-wow-delay="0.8s" data-wow-duration="2s" style="color:#000;">NEWEST FASHION <br> BAGS COLLECTION</span>
+								<span class="discount-info_small_txt customColor text-uppercase wow fadeInUp text-center" data-wow-delay="0.6s" data-wow-duration="2s">get upto 40% offer for order over $499!</span>
+								<span class="discount-info_shadow_txt font-additional font-weight-bold text-uppercase wow fadeIn text-center" data-wow-delay="0.8s" data-wow-duration="2s" style="color:#000;">The Best <BR>Painter Ever</span>
                 <div class="line-separatorBox">
                   <div class="line-separator" style="visibility: hidden; margin-top:15px; margin-bottom:30px;">
                     <img src="images/seperator.png" alt="seperator">
@@ -686,8 +685,8 @@
 			<section id="slider" class="slider-container">
 				<div class="container">
           <div class="row">
-					<h2 class="title font-additional font-weight-bold text-uppercase wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="2s">NEW ARRIVALS</h2>
-					<span class="subTitle font-additional font-weight-normal text-uppercase wow fadeIn" data-wow-duration="2s">TRENDY COLLECTION</span>
+					<h2 class="title font-additional font-weight-bold text-uppercase wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="2s">LAST ARRIVALS</h2>
+					<span class="subTitle font-additional font-weight-normal text-uppercase wow fadeIn" data-wow-duration="2s">MIX COLLECTION</span>
 					  <div class="line-separatorBox text-center">
               <div class="line-separator animated" style="visibility: visible; margin-top:15px; margin-bottom:30px;">
                   <img src="images/seperator.png" alt="seperator">
@@ -830,78 +829,6 @@
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</section>
-
-			<section id="previewInfo">
-				<div class="container relative blog-preview">					
-					<div class="row">
-          <h2 class="title font-additional font-weight-bold text-uppercase wow fadeInUp" data-wow-delay="0.3s">FROM THE BLOG</h2>
-          <span class="subTitle font-additional font-weight-normal text-uppercase wow fadeIn" data-wow-delay="0.3s" data-wow-duration="2s">LATEST TRENDS</span>
-            <div class="line-separatorBox text-center clearfix">
-              <div class="line-separator text-center animated" style="visibility: visible; margin-top:15px; margin-bottom:30px;">
-                  <img src="images/seperator.png" alt="seperator">
-                </div>
-            </div>
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 clearfix blog-outer-container">
-							<div class="col-lg-6 col-md-6 col-sm-12 blog-preview_item wow fadeIn" data-wow-delay="0.3s" data-wow-duration="2s">
-								<a href="blog-post.html" class="blog-preview_image">
-									<img src="images/blog-img-1.jpg" alt="Blog Post">
-									<div class="blog-preview_posted">
-										<span class="blog-preview_date font-additional font-weight-bold text-uppercase">15 FEB</span>
-										<span class="blog-preview_comments font-additional font-weight-normal text-uppercase"><i class="fa fa-comment"></i> 15</span>
-									</div>
-								</a>
-								<div class="blog-preview_info">
-									<h4 class="blog-preview_title font-additional font-weight-bold text-uppercase">MAURIS EST LACUS FRINGILLA</h4>
-									<div class="blog-preview_desc font-main font-weight-normal">Proin est elentesque risus magna vulputate vitae sodales uam morbi non sem lacus porta mollis nunc condime.</div>
-									<a class="blog-preview_btn button-border font-additional font-weight-normal before-bg text-uppercase hvr-bounce-to-right"  href="blog-post.html">READ MORE</a>
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-6 col-sm-12 blog-preview_item wow fadeIn" data-wow-delay="0.3s" data-wow-duration="2s">
-								<a href="blog-post.html" class="blog-preview_image">
-									<img src="images/blog-img-2.jpg" alt="Blog Post">
-									<div class="blog-preview_posted">
-										<span class="blog-preview_date font-additional font-weight-bold text-uppercase">15 FEB</span>
-										<span class="blog-preview_comments font-additional font-weight-normal text-uppercase"><i class="fa fa-comment"></i> 15</span>
-									</div>
-								</a>
-								<div class="blog-preview_info">
-									<h4 class="blog-preview_title font-additional font-weight-bold text-uppercase">PRAESENT LOREM PELLENTESQUE</h4>
-									<div class="blog-preview_desc font-main font-weight-normal">Proin est elentesque risus magna vulputate vitae sodales uam morbi non sem lacus porta mollis nunc condime.</div>
-									<a class="blog-preview_btn button-border font-additional font-weight-normal before-bg text-uppercase hvr-bounce-to-right"  href="blog-post.html">READ MORE</a>
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-6 col-sm-12 blog-preview_item wow fadeIn" data-wow-delay="0.3s" data-wow-duration="2s">
-								<a href="blog-post.html" class="blog-preview_image">
-									<img src="images/blog-img-3.jpg" alt="Blog Post">
-									<div class="blog-preview_posted">
-										<span class="blog-preview_date font-additional font-weight-bold text-uppercase">15 FEB</span>
-										<span class="blog-preview_comments font-additional font-weight-normal text-uppercase"><i class="fa fa-comment"></i> 15</span>
-									</div>
-								</a>
-								<div class="blog-preview_info">
-									<h4 class="blog-preview_title font-additional font-weight-bold text-uppercase">AENEAN NISL VITAE IPSUM LOBORTIS</h4>
-									<div class="blog-preview_desc font-main font-weight-normal">Proin est elentesque risus magna vulputate vitae sodales uam morbi non sem lacus porta mollis nunc condime.</div>
-									<a class="blog-preview_btn button-border font-additional font-weight-normal before-bg text-uppercase hvr-bounce-to-right"  href="blog-post.html">READ MORE</a>
-								</div>
-							</div>
-              <div class="col-lg-6 col-md-6 col-sm-12 blog-preview_item wow fadeIn" data-wow-delay="0.3s" data-wow-duration="2s">
-                <a href="blog-post.html" class="blog-preview_image">
-                  <img src="images/blog-img-4.jpg" alt="Blog Post">
-                  <div class="blog-preview_posted">
-                    <span class="blog-preview_date font-additional font-weight-bold text-uppercase">15 FEB</span>
-                    <span class="blog-preview_comments font-additional font-weight-normal text-uppercase"><i class="fa fa-comment"></i> 15</span>
-                  </div>
-                </a>
-                <div class="blog-preview_info">
-                  <h4 class="blog-preview_title font-additional font-weight-bold text-uppercase">AENEAN NISL VITAE IPSUM LOBORTIS</h4>
-                  <div class="blog-preview_desc font-main font-weight-normal">Proin est elentesque risus magna vulputate vitae sodales uam morbi non sem lacus porta mollis nunc condime.</div>
-                  <a class="blog-preview_btn button-border font-additional font-weight-normal before-bg text-uppercase hvr-bounce-to-right"  href="blog-post.html">READ MORE</a>
-                </div>
-              </div>
-						</div>						
 					</div>
 				</div>
 			</section>

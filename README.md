@@ -1,6 +1,9 @@
 # \<pwatutorial\>
 
-
+##This version contains PWA files
+	so thre's firebase for hosting,
+## Not Complete Yet 
+this version need work, it's done by 80% only 
 
 ## Install the Polymer-CLI
 

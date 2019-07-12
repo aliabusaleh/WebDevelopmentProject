@@ -795,15 +795,15 @@
                 if (that.options.liveSearch) {
                     $items.each(function(i) {
                         if ($(this).is(':not(.disabled)')) {
-                            $(this).data('index', i);
+                            $(this).data('index.php', i);
                         }
                     });
                     index = $items.index($items.filter('.active'));
-                    first = $items.filter(':not(.disabled):visible').first().data('index');
-                    last = $items.filter(':not(.disabled):visible').last().data('index');
-                    next = $items.eq(index).nextAll(':not(.disabled):visible').eq(0).data('index');
-                    prev = $items.eq(index).prevAll(':not(.disabled):visible').eq(0).data('index');
-                    nextPrev = $items.eq(next).prevAll(':not(.disabled):visible').eq(0).data('index');
+                    first = $items.filter(':not(.disabled):visible').first().data('index.php');
+                    last = $items.filter(':not(.disabled):visible').last().data('index.php');
+                    next = $items.eq(index).nextAll(':not(.disabled):visible').eq(0).data('index.php');
+                    prev = $items.eq(index).prevAll(':not(.disabled):visible').eq(0).data('index.php');
+                    nextPrev = $items.eq(next).prevAll(':not(.disabled):visible').eq(0).data('index.php');
                 }
                 
                 prevIndex = $this.data('prevIndex');

@@ -12,6 +12,58 @@
       "type": "style",
       "weight": 1
     },
+    "vendor/jquery/jquery-3.2.1.min.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "vendor/bootstrap/js/popper.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "vendor/bootstrap/js/bootstrap.min.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "vendor/select2/select2.min.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "vendor/tilt/tilt.jquery.min.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "js/main.js": {
+      "type": "script",
+      "weight": 1
+    },
+    "vendor/bootstrap/css/bootstrap.min.css": {
+      "type": "style",
+      "weight": 1
+    },
+    "fonts/font-awesome-4.7.0/css/font-awesome.min.css": {
+      "type": "style",
+      "weight": 1
+    },
+    "vendor/animate/animate.css": {
+      "type": "style",
+      "weight": 1
+    },
+    "vendor/css-hamburgers/hamburgers.min.css": {
+      "type": "style",
+      "weight": 1
+    },
+    "vendor/select2/select2.min.css": {
+      "type": "style",
+      "weight": 1
+    },
+    "css/util.css": {
+      "type": "style",
+      "weight": 1
+    },
+    "css/main.css": {
+      "type": "style",
+      "weight": 1
+    },
     "plugins/switcher/css/switcher.css": {
       "type": "style",
       "weight": 1
